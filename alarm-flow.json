@@ -1,20 +1,20 @@
 [
     {
-        "id": "745a3013.32a2d",
+        "id": "1f17c67c7ea6aa67",
         "type": "tab",
-        "label": "alarms",
+        "label": "sonoff-1",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "c33b6a45.3a75c8",
+        "id": "d385b0b12460c568",
         "type": "mqtt in",
-        "z": "745a3013.32a2d",
+        "z": "1f17c67c7ea6aa67",
         "name": "device1/alarm1",
         "topic": "device1/alarm1",
         "qos": "0",
         "datatype": "auto",
-        "broker": "1b3c63a4.c275cc",
+        "broker": "7f12383eed7d02e5",
         "nl": false,
         "rap": true,
         "rh": 0,
@@ -22,14 +22,14 @@
         "y": 200,
         "wires": [
             [
-                "144ad260.34206e"
+                "3c992ae9fac2b1f9"
             ]
         ]
     },
     {
-        "id": "144ad260.34206e",
+        "id": "3c992ae9fac2b1f9",
         "type": "json",
-        "z": "745a3013.32a2d",
+        "z": "1f17c67c7ea6aa67",
         "name": "",
         "property": "payload",
         "action": "",
@@ -38,15 +38,15 @@
         "y": 200,
         "wires": [
             [
-                "7294b5fa.d0d03c"
+                "44a2272d1b21b0a4"
             ]
         ]
     },
     {
-        "id": "b255d6e3.58a9b8",
+        "id": "9114bed86ce5de8d",
         "type": "debug",
-        "z": "745a3013.32a2d",
-        "name": "inTopic1",
+        "z": "1f17c67c7ea6aa67",
+        "name": "Feedback2",
         "active": false,
         "tosidebar": true,
         "console": false,
@@ -55,14 +55,14 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 120,
+        "x": 530,
+        "y": 140,
         "wires": []
     },
     {
-        "id": "826b12d4.dad08",
+        "id": "15a2f66e5d650e39",
         "type": "mqtt out",
-        "z": "745a3013.32a2d",
+        "z": "1f17c67c7ea6aa67",
         "name": "device1/relay1-sonoff",
         "topic": "device1/relay1",
         "qos": "0",
@@ -72,16 +72,16 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "1b3c63a4.c275cc",
+        "broker": "7f12383eed7d02e5",
         "x": 520,
         "y": 260,
         "wires": []
     },
     {
-        "id": "7294b5fa.d0d03c",
+        "id": "44a2272d1b21b0a4",
         "type": "debug",
-        "z": "745a3013.32a2d",
-        "name": "inTopic2",
+        "z": "1f17c67c7ea6aa67",
+        "name": "Feedback1",
         "active": false,
         "tosidebar": true,
         "console": false,
@@ -90,16 +90,26 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
+        "x": 530,
         "y": 200,
         "wires": []
     },
     {
-        "id": "e25e01828dae475b",
+        "id": "2687cd4acfa1a15f",
+        "type": "comment",
+        "z": "1f17c67c7ea6aa67",
+        "name": "Window1",
+        "info": "",
+        "x": 160,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "158c6219c2d2d8bc",
         "type": "aedes broker",
-        "z": "745a3013.32a2d",
+        "z": "1f17c67c7ea6aa67",
         "name": "",
-        "mqtt_port": 1883,
+        "mqtt_port": "1884",
         "mqtt_ws_bind": "port",
         "mqtt_ws_port": "",
         "mqtt_ws_path": "",
@@ -110,19 +120,19 @@
         "dburl": "",
         "usetls": false,
         "x": 190,
-        "y": 120,
+        "y": 140,
         "wires": [
             [
-                "b255d6e3.58a9b8"
+                "9114bed86ce5de8d"
             ]
         ]
     },
     {
-        "id": "1b3c63a4.c275cc",
+        "id": "7f12383eed7d02e5",
         "type": "mqtt-broker",
-        "name": "aedes:1883",
-        "broker": "localhost",
-        "port": "1883",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": "1884",
         "clientid": "",
         "usetls": false,
         "protocolVersion": "4",

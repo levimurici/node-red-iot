@@ -121,14 +121,19 @@ void serialize_update()
 
 void alarm_check()
 {
-  digitalRead(encoder);
-  Serial.println(encoder);
+  int encoder_state = digitalRead(encoder);
+  Serial.println(encoder_state);
   
-  if(encoder)
+  if(encoder_state)
   {
     state_alarm1 = "WARNING";
+//    /Serial.println(state_alarm1);
   }
-  else { state_alarm1 = "COOL"; }
+    else
+    {
+      state_alarm1 = "COOL";
+//      /Serial.println(state_alarm1);
+    }
 }
 
 void setup()
@@ -141,7 +146,7 @@ void setup()
 
   Serial.begin(115200);
   setup_wifi();
-  client.setServer(mqtt_server, 1883);
+  client.setServer(mqtt_server, porta);
   client.setCallback(callback);
 }
 

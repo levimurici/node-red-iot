@@ -4,6 +4,7 @@
 #define INTERVALO_DE_ENVIO 1000
 //#define SERVER_IP "192.168.101.65:3000"
 #define mqtt_server "192.168.101.28"
+unsigned int porta = 1884;
 
 //#define sub1 "device1/alarm1"
 #define sub1 "device1/relay1"
