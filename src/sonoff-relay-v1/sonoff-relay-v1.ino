@@ -43,7 +43,7 @@ void reconnect()
   {
     Serial.print("Attempting MQTT connection...");
     // Cria uma ID
-    String clientId = "ESP-Alarm";
+    String clientId = "device1/relay";
     clientId += String(random(0xffff), HEX);
 
     if (client.connect(clientId.c_str()))
@@ -86,7 +86,7 @@ void callback(char *topic, byte *payload, unsigned int length)
 void output_relay(String topic_in , String payload_in)
 {  
   // Relay1
-  if (topic_in == "device1/relay1-sonoff")  {
+  if (topic_in == sub1)  {
     if(payload_in == "true") {
       relay1.on();
       led.on();
@@ -104,83 +104,29 @@ void serialize_update()
 {
 
   StaticJsonDocument<512> doc_send;
-  doc_send["name_mcu"] = "Janela 1";
+
+  doc_send["name_mcu"] = "Vanderlei";
 
   JsonArray sensors = doc_send.createNestedArray("sensors");
 
   JsonObject sensors_0 = sensors.createNestedObject();
-  sensors_0["name"] = "device1/Relay";
-  sensors_0["status"] = state_relay1;
-
-  JsonObject sensors_1 = sensors.createNestedObject();
-  sensors_1["name"] = "Chave";
-  sensors_1["status"] = state_alarm1; 
+  sensors_0["name"] = "Relay1";
+  sensors_0["state"] = state_relay1;
 
   serializeJson(doc_send, json_to_send);
-}
-
-void alarm_on()
-{
-  float seno;
-  int frequencia;
-  
-  for(int x=0;x<180;x++){
-    seno=(sin(x*3.1416/180));
-    frequencia = 2000+(int(seno*1000));
-    tone(buzzer,frequencia);
-    delay(2);
-    Serial.println("WILL");
-  }
-  delay(500);
-  tone(buzzer, 2000);
-  Serial.println("WOO");
-  delay(800);
-}
-
-void alarm_off()
-{
-  digitalWrite(buzzer, LOW);
-}
-
-void alarm_check()
-{
-  int encoder_state = digitalRead(encoder);
-//  Serial.println(encoder_state);
-  
-  if(encoder_state)
-  {
-    state_alarm1 = "WARNING";
-//    state_relay1 = "true";
-    state_relay1 = "false";
-//    /Serial.println(state_alarm1);
-    alarm_on();
-  }
-    else
-    { 
-      state_alarm1 = "COOL";
-//      state_relay1 = "false";
-      state_relay1 = "true";
-//      /Serial.println(state_alarm1);
-      alarm_off();
-    }
 }
 
 void setup()
 {
   pinMode(relay_1, OUTPUT);
   pinMode(status_led, OUTPUT);
-  pinMode(buzzer, OUTPUT);
-  pinMode(encoder, INPUT);
 
   relay1.off();
-  state_relay1 = "true";
-  
+
   Serial.begin(115200);
   setup_wifi();
   client.setServer(mqtt_server, porta);
   client.setCallback(callback);
-
-  
 }
 
 void loop()
@@ -194,8 +140,7 @@ void loop()
   unsigned long now = millis();
   if (now - lastMsg > 2000)
   { 
-    alarm_check();
     serialize_update();
-    client.publish(post1, json_to_send); 
+    client.publish("outTopic3", json_to_send); 
   }
 }
