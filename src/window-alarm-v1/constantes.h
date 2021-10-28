@@ -1,9 +1,9 @@
 /* defines - wi-fi */
-#define SSID_WIFI "IPQ"
-#define PASSWORD "inovacao"
+#define SSID_WIFI "Familia Murici"
+#define PASSWORD "murici1020"
 #define INTERVALO_DE_ENVIO 1000
 //#define SERVER_IP "192.168.101.65:3000"
-const char* mqtt_server = "192.168.101.28";
+const char* mqtt_server = "192.168.1.6";
 const int porta = 1883;
 
 //#define sub1 "device1/alarm1"
