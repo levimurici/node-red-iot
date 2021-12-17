@@ -104,17 +104,13 @@ void serialize_update()
 {
 
   StaticJsonDocument<512> doc_send;
-  doc_send["name_mcu"] = "Janela 1";
-
-  JsonArray sensors = doc_send.createNestedArray("sensors");
-
-  JsonObject sensors_0 = sensors.createNestedObject();
-  sensors_0["name"] = "device1/Relay";
-  sensors_0["status"] = state_relay1;
-
-  JsonObject sensors_1 = sensors.createNestedObject();
-  sensors_1["name"] = "Chave";
-  sensors_1["status"] = state_alarm1; 
+  
+  JsonObject alarms = doc.createNestedObject("alarms");
+  
+  JsonObject alarms_suricato_01 = alarms.createNestedObject("suricato-01");
+  alarms_suricato_01["device"] = "device1/Alarm1";
+  alarms_suricato_01["status"] = state_alarm1; 
+  alarms_suricato_01["control"] = state_relay1;
 
   serializeJson(doc_send, json_to_send);
 }
@@ -149,19 +145,19 @@ void alarm_check()
   
   if(encoder_state)
   {
-    state_alarm1 = "WARNING";
+    state_alarm1 = "COOL";
 //    state_relay1 = "true";
-    state_relay1 = "false";
+      state_relay1 = "false";
 //    /Serial.println(state_alarm1);
-    alarm_on();
+      alarm_off();
   }
     else
     { 
-      state_alarm1 = "COOL";
+      state_alarm1 = "SE LIGA";
 //      state_relay1 = "false";
       state_relay1 = "true";
 //      /Serial.println(state_alarm1);
-      alarm_off();
+      alarm_on();
     }
 }
 
