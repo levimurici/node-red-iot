@@ -108,7 +108,7 @@ void serialize_update()
   JsonObject alarms = doc_send.createNestedObject("alarms");
   
   JsonObject alarms_suricato = alarms.createNestedObject("suricato");
-  alarms_suricato["device"] = "device1/Alarm1";
+  alarms_suricato["device"] = "device1/alarm1";
   alarms_suricato["status"] = state_alarm1; 
   alarms_suricato["control"] = state_relay1;
 

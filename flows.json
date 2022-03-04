@@ -2,7 +2,14 @@
     {
         "id": "1f17c67c7ea6aa67",
         "type": "tab",
-        "label": "alarmes",
+        "label": "post_data",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ec2b6a22901dfe03",
+        "type": "tab",
+        "label": "get_data",
         "disabled": false,
         "info": ""
     },
@@ -65,32 +72,14 @@
         "sessionExpiry": ""
     },
     {
-        "id": "ef2bec65.5d157",
-        "type": "ui_group",
-        "name": "control",
-        "tab": "5ed4c2fb.90985c",
-        "order": 1,
-        "disp": true,
-        "width": 6,
-        "collapse": false
-    },
-    {
         "id": "6cb52c32.2d24d4",
         "type": "ui_group",
         "name": "monitor",
-        "tab": "5ed4c2fb.90985c",
+        "tab": "391bb37912505109",
         "order": 1,
         "disp": true,
-        "width": 8,
+        "width": "8",
         "collapse": false
-    },
-    {
-        "id": "5ed4c2fb.90985c",
-        "type": "ui_tab",
-        "name": "Node-iot-v1",
-        "icon": "iot-v1",
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "11710002.55962",
@@ -203,6 +192,132 @@
         }
     },
     {
+        "id": "89c77bdb4e6a7c56",
+        "type": "ui_group",
+        "name": "control-tv-ir",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "ec3ea2bb2c375d43",
+        "type": "ui_group",
+        "name": "AC-BANCADA",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "0c059704f2a4492e",
+        "type": "ui_group",
+        "name": "control-tv-ir",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "7c87fb7d7768b778",
+        "type": "ui_group",
+        "name": "control-sonoff",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "3c7ec59465e2a11f",
+        "type": "ui_group",
+        "name": "AC-CENTRO1",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "b5424b3e68c13056",
+        "type": "ui_group",
+        "name": "AC-CENTRO2",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "04e42f237e32d3f6",
+        "type": "ui_group",
+        "name": "AC-NOC",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "da7c836cf21a1634",
+        "type": "ui_group",
+        "name": "BLINDS",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "af5d7484b110507a",
+        "type": "ui_group",
+        "name": "CONTROLE-TOTAL",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false
+    },
+    {
+        "id": "1452aaedcbd7f359",
+        "type": "ui_group",
+        "name": "Readings",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "0dc6cb4f74a67ed3",
+        "type": "ui_group",
+        "name": "sonoff",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b2474b4db0eb9982",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "391bb37912505109",
+        "type": "ui_tab",
+        "name": "Tab 1",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
         "id": "4f164999.c279e8",
         "type": "influxdb",
         "hostname": "127.0.0.1",
@@ -215,175 +330,6 @@
         "influxdbVersion": "1.8-flux",
         "url": "http://localhost:8086",
         "rejectUnauthorized": false
-    },
-    {
-        "id": "89c77bdb4e6a7c56",
-        "type": "ui_group",
-        "name": "control-tv-ir",
-        "tab": "f7fa06937bf485ef",
-        "order": 1,
-        "disp": true,
-        "width": "4",
-        "collapse": false
-    },
-    {
-        "id": "f7fa06937bf485ef",
-        "type": "ui_tab",
-        "name": "control-ir-tv",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "ec3ea2bb2c375d43",
-        "type": "ui_group",
-        "name": "AC-BANCADA",
-        "tab": "b26c84bb69f542f6",
-        "order": 2,
-        "disp": true,
-        "width": "4",
-        "collapse": false
-    },
-    {
-        "id": "0c059704f2a4492e",
-        "type": "ui_group",
-        "name": "control-tv-ir",
-        "tab": "1e05606f01faf337",
-        "order": 1,
-        "disp": true,
-        "width": "4",
-        "collapse": false
-    },
-    {
-        "id": "b26c84bb69f542f6",
-        "type": "ui_tab",
-        "name": "Node-iot-ir",
-        "icon": "dashboard",
-        "order": 2,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "7c87fb7d7768b778",
-        "type": "ui_group",
-        "name": "control-sonoff",
-        "tab": "275882d2d7281dd9",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "275882d2d7281dd9",
-        "type": "ui_tab",
-        "name": "Node-iot-v1",
-        "icon": "iot-v1",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "3c7ec59465e2a11f",
-        "type": "ui_group",
-        "name": "AC-CENTRO1",
-        "tab": "b26c84bb69f542f6",
-        "order": 3,
-        "disp": true,
-        "width": "4",
-        "collapse": false
-    },
-    {
-        "id": "b5424b3e68c13056",
-        "type": "ui_group",
-        "name": "AC-CENTRO2",
-        "tab": "b26c84bb69f542f6",
-        "order": 4,
-        "disp": true,
-        "width": "4",
-        "collapse": false
-    },
-    {
-        "id": "04e42f237e32d3f6",
-        "type": "ui_group",
-        "name": "AC-NOC",
-        "tab": "b26c84bb69f542f6",
-        "order": 5,
-        "disp": true,
-        "width": "4",
-        "collapse": false
-    },
-    {
-        "id": "1e05606f01faf337",
-        "type": "ui_tab",
-        "name": "control-ir-tv",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "da7c836cf21a1634",
-        "type": "ui_group",
-        "name": "BLINDS",
-        "tab": "0cbe443c817cf630",
-        "order": 5,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "0cbe443c817cf630",
-        "type": "ui_tab",
-        "name": "BLINDS",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "af5d7484b110507a",
-        "type": "ui_group",
-        "name": "CONTROLE-TOTAL",
-        "tab": "b26c84bb69f542f6",
-        "order": 1,
-        "disp": true,
-        "width": 6,
-        "collapse": false
-    },
-    {
-        "id": "e30ae170c933c87f",
-        "type": "ui_tab",
-        "name": "xdk110",
-        "icon": "dashboard",
-        "order": 6,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "1452aaedcbd7f359",
-        "type": "ui_group",
-        "name": "Readings",
-        "tab": "e30ae170c933c87f",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "0dc6cb4f74a67ed3",
-        "type": "ui_group",
-        "name": "sonoff",
-        "tab": "baed8e4a0bb86bb1",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "baed8e4a0bb86bb1",
-        "type": "ui_tab",
-        "name": "sonoff-1",
-        "icon": "sonoff-1",
-        "order": 3,
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "d385b0b12460c568",
@@ -423,24 +369,6 @@
         ]
     },
     {
-        "id": "15a2f66e5d650e39",
-        "type": "mqtt out",
-        "z": "1f17c67c7ea6aa67",
-        "name": "device2/relay",
-        "topic": "device1/relay",
-        "qos": "0",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "dcf414604905f363",
-        "x": 850,
-        "y": 220,
-        "wires": []
-    },
-    {
         "id": "44a2272d1b21b0a4",
         "type": "debug",
         "z": "1f17c67c7ea6aa67",
@@ -461,7 +389,7 @@
         "id": "2687cd4acfa1a15f",
         "type": "comment",
         "z": "1f17c67c7ea6aa67",
-        "name": "Window1",
+        "name": "suricato-01",
         "info": "",
         "x": 160,
         "y": 40,
@@ -471,16 +399,16 @@
         "id": "44fa236e278c3eb8",
         "type": "http request",
         "z": "1f17c67c7ea6aa67",
-        "name": "alarm1/push",
+        "name": "suricato01-status-post",
         "method": "POST",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://192.168.101.28:3000/alarm/push",
+        "url": "http://api:3000/mcu/alarm/dump/suricato01",
         "tls": "",
         "persist": false,
         "proxy": "",
         "authType": "",
-        "x": 570,
+        "x": 600,
         "y": 140,
         "wires": [
             []
@@ -743,14 +671,14 @@
         ]
     },
     {
-        "id": "d89274e0becef811",
+        "id": "39c00eb5f41060c0",
         "type": "change",
-        "z": "1f17c67c7ea6aa67",
-        "name": "device1/relay",
+        "z": "ec2b6a22901dfe03",
+        "name": "suricato-01/alarm",
         "rules": [
             {
                 "t": "move",
-                "p": "payload.sensors[0][\"control\"]",
+                "p": "payload.alarms[\"suricato-01\"][\"control\"]",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
@@ -761,23 +689,23 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
-        "y": 220,
+        "x": 630,
+        "y": 120,
         "wires": [
             [
-                "15a2f66e5d650e39"
+                "53f4a2a639d0b075"
             ]
         ]
     },
     {
-        "id": "d97cca6e601f52b0",
+        "id": "5967cc9d7c334132",
         "type": "change",
-        "z": "1f17c67c7ea6aa67",
-        "name": "device2/relay",
+        "z": "ec2b6a22901dfe03",
+        "name": "suricato-02/alarm",
         "rules": [
             {
                 "t": "move",
-                "p": "payload.sensors[1][\"control\"]",
+                "p": "payload.alarms[\"suricato-02\"][\"control\"]",
                 "pt": "msg",
                 "to": "payload",
                 "tot": "msg"
@@ -788,82 +716,116 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 570,
-        "y": 260,
+        "x": 630,
+        "y": 160,
         "wires": [
             [
-                "f861bc8453cd04b8"
+                "fbd406aec3fae731"
             ]
         ]
     },
     {
-        "id": "a76ed447f2b1d714",
-        "type": "change",
-        "z": "1f17c67c7ea6aa67",
-        "name": "device3/relay",
-        "rules": [
-            {
-                "t": "move",
-                "p": "payload.sensors[2][\"control\"]",
-                "pt": "msg",
-                "to": "payload",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 570,
-        "y": 300,
-        "wires": [
-            [
-                "3667c1b347541d44"
-            ]
-        ]
-    },
-    {
-        "id": "f861bc8453cd04b8",
-        "type": "mqtt out",
-        "z": "1f17c67c7ea6aa67",
-        "name": "device3/relay",
-        "topic": "device2/relay",
-        "qos": "0",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "dcf414604905f363",
-        "x": 850,
-        "y": 260,
+        "id": "539c36f763b6d710",
+        "type": "debug",
+        "z": "ec2b6a22901dfe03",
+        "name": "Feedback1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 200,
         "wires": []
     },
     {
-        "id": "3667c1b347541d44",
-        "type": "mqtt out",
-        "z": "1f17c67c7ea6aa67",
-        "name": "device4/relay",
-        "topic": "device3/relay",
-        "qos": "0",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "dcf414604905f363",
-        "x": 850,
-        "y": 300,
-        "wires": []
+        "id": "c5a1c10ad74ebc0b",
+        "type": "json",
+        "z": "ec2b6a22901dfe03",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "39c00eb5f41060c0",
+                "5967cc9d7c334132",
+                "539c36f763b6d710"
+            ]
+        ]
     },
     {
-        "id": "6b8c60525c562b98",
+        "id": "f875203bae4e54f3",
+        "type": "inject",
+        "z": "ec2b6a22901dfe03",
+        "name": "request",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 180,
+        "y": 80,
+        "wires": [
+            [
+                "6885d647720e3d0e"
+            ]
+        ]
+    },
+    {
+        "id": "34d233d7842e4665",
+        "type": "mqtt in",
+        "z": "1f17c67c7ea6aa67",
+        "name": "device2/alarm",
+        "topic": "device2/alarm",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "dcf414604905f363",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "9460b1442a3a5e3a"
+            ]
+        ]
+    },
+    {
+        "id": "9460b1442a3a5e3a",
+        "type": "json",
+        "z": "1f17c67c7ea6aa67",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 370,
+        "y": 280,
+        "wires": [
+            [
+                "28faf5443a2a2d5a",
+                "76c3ec0a4d10e561"
+            ]
+        ]
+    },
+    {
+        "id": "76c3ec0a4d10e561",
         "type": "debug",
         "z": "1f17c67c7ea6aa67",
-        "name": "Feedback2",
+        "name": "Feedback1",
         "active": false,
         "tosidebar": true,
         "console": false,
@@ -873,74 +835,106 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 570,
-        "y": 340,
+        "y": 240,
         "wires": []
     },
     {
-        "id": "9664579c6fe7930f",
+        "id": "f1b4ec559f153eaf",
+        "type": "comment",
+        "z": "1f17c67c7ea6aa67",
+        "name": "suricato-02",
+        "info": "",
+        "x": 160,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "28faf5443a2a2d5a",
         "type": "http request",
         "z": "1f17c67c7ea6aa67",
-        "name": "relay-array/pull",
+        "name": "suricato02-status-post",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://api:3000/mcu/alarm/dump/suricato02",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 600,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5506831d9bb2a32b",
+        "type": "debug",
+        "z": "ec2b6a22901dfe03",
+        "name": "Feedback2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 170,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "53f4a2a639d0b075",
+        "type": "ui_text",
+        "z": "ec2b6a22901dfe03",
+        "group": "6cb52c32.2d24d4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "alarm1/status",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 860,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "fbd406aec3fae731",
+        "type": "ui_text",
+        "z": "ec2b6a22901dfe03",
+        "group": "6cb52c32.2d24d4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "alarm2/status",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 860,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6885d647720e3d0e",
+        "type": "http request",
+        "z": "ec2b6a22901dfe03",
+        "name": "suricato-alarms-get",
         "method": "GET",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "http://192.168.101.28:3000/alarm/pull",
+        "url": "http://api:3000/mcu/alarm/data-updated",
         "tls": "",
         "persist": true,
         "proxy": "",
         "authType": "",
-        "x": 160,
-        "y": 260,
+        "x": 190,
+        "y": 140,
         "wires": [
             [
-                "3388753ff3e0659c"
-            ]
-        ]
-    },
-    {
-        "id": "3388753ff3e0659c",
-        "type": "json",
-        "z": "1f17c67c7ea6aa67",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 370,
-        "y": 260,
-        "wires": [
-            [
-                "6b8c60525c562b98",
-                "d89274e0becef811",
-                "d97cca6e601f52b0",
-                "a76ed447f2b1d714"
-            ]
-        ]
-    },
-    {
-        "id": "61d273ee12c4c7d1",
-        "type": "inject",
-        "z": "1f17c67c7ea6aa67",
-        "name": "request",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "1",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "1",
-        "topic": "",
-        "payloadType": "date",
-        "x": 160,
-        "y": 200,
-        "wires": [
-            [
-                "9664579c6fe7930f"
+                "c5a1c10ad74ebc0b",
+                "5506831d9bb2a32b"
             ]
         ]
     }
