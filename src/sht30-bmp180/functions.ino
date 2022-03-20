@@ -43,14 +43,19 @@ void callback(char *topic, byte *payload, unsigned int length) {
 
 void serialize_update()
 {
-  StaticJsonDocument<512> doc_send;
+  StaticJsonDocument<192> doc_send;
 
-  JsonObject suricato_temp = doc_send.createNestedObject("suricato_temp");
+  doc_send["name"] = "suricato11";
   
-  JsonObject sht_30_suricato_sht = suricato_temp.createNestedObject("suricato");
-  sht_30_suricato_sht["device"] = "device4/temperature";
-  sht_30_suricato_sht["temperature"] = state_temp;
-  sht_30_suricato_sht["humidity"] = state_hum;
+  JsonObject info = doc_send.createNestedObject("info");
+  info["type"] = "Garden";
+  info["place"] = "quintal";
+  info["ipaddr"] = "7.1.0.1";
+  
+  JsonObject data = doc_send.createNestedObject("data");
+  data["temperature"] = state_temp;
+  data["humidity"] = state_hum;
+  data["soil"] = "data";
 
   serializeJson(doc_send, json_to_send);
 }
