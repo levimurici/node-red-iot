@@ -1,39 +1,13 @@
 {
-    "name": "node-red-docker",
-    "version": "2.0.6",
-    "description": "Low-code programming for event-driven applications",
-    "homepage": "http://nodered.org",
-    "license": "Apache-2.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/node-red/node-red-docker.git"
-    },
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
     "private": true,
-    "scripts": {
-        "start": "node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS",
-        "debug": "node --inspect=0.0.0.0:9229 $NODE_OPTIONS node_modules/node-red/red.js $FLOWS",
-        "debug_brk": "node --inspect=0.0.0.0:9229 --inspect-brk $NODE_OPTIONS node_modules/node-red/red.js $FLOWS"
-    },
-    "contributors": [
-        {
-            "name": "Dave Conway-Jones"
-        },
-        {
-            "name": "Nick O'Leary"
-        },
-        {
-            "name": "James Thomas"
-        },
-        {
-            "name": "Raymond Mouthaan"
-        }
-    ],
     "dependencies": {
-        "node-red": "2.0.6",
-        "node-red-dashboard": "github:node-red/node-red-dashboard",
-        "node-red-node-smooth": "^0.1.2"
-    },
-    "engines": {
-        "node": ">=12"
+        "node-red-contrib-alexa-home-skill": "~0.1.19",
+        "node-red-contrib-amazon-echo": "~0.1.10",
+        "node-red-contrib-home-assistant-websocket": "~0.44.0",
+        "node-red-contrib-virtual-smart-home": "~2.13.1",
+        "node-red-dashboard": "~3.2.0"
     }
 }

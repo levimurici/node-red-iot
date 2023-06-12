@@ -3,7 +3,7 @@
 
 DOCKER=$(shell which docker)
 REPOSITORY?=dendebaiano/suricato-nodered
-VERSION?=1.1.2
+VERSION?=2.0.0
 
 image: ## build the docker image from Dockerfile
 	$(DOCKER) build --no-cache -t ${REPOSITORY}:${VERSION} \

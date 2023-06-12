@@ -1,0 +1,4087 @@
+[
+    {
+        "id": "b5c7f3ef3757c5ae",
+        "type": "tab",
+        "label": "post_alarm_data",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7b6e128ce996e30a",
+        "type": "tab",
+        "label": "post_garden_data",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a1425bb4b8c39b05",
+        "type": "tab",
+        "label": "post_light_data",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1756d20f51a975d9",
+        "type": "tab",
+        "label": "get_data",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "83982b732e8f09b1",
+        "type": "tab",
+        "label": "connections",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1188991a12524be6",
+        "type": "tab",
+        "label": "alexa_output",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8437998614c3c675",
+        "type": "alexa-home-conf",
+        "username": "dendebaiano"
+    },
+    {
+        "id": "dcf414604905f363",
+        "type": "mqtt-broker",
+        "name": "aws_iot_core_suricato_mqtt",
+        "broker": "a267k5rhrr3q3s-ats.iot.us-west-1.amazonaws.com",
+        "port": "8883",
+        "tls": "2feb5af6159f1ec7",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "11710002.55962",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": false
+    },
+    {
+        "id": "aa75609e0bfb9f94",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Suricato Home IoT",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "391bb37912505109",
+        "type": "ui_tab",
+        "name": "Quintal",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "94b977b84f573305",
+        "type": "ui_tab",
+        "name": "Sala de estar",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9c34d3c15c313c85",
+        "type": "ui_group",
+        "name": "Sala de Estar",
+        "tab": "94b977b84f573305",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "41fda1d6784196f8",
+        "type": "ui_group",
+        "name": "Varanda",
+        "tab": "391bb37912505109",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1ab77321285bdc05",
+        "type": "server",
+        "name": "Suricato Home Assistant",
+        "version": 4,
+        "addon": false,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": "y|yes|true|on|home|open",
+        "connectionDelay": true,
+        "cacheJson": true,
+        "heartbeat": false,
+        "heartbeatInterval": "30",
+        "areaSelector": "friendlyName",
+        "deviceSelector": "friendlyName",
+        "entitySelector": "friendlyName",
+        "statusSeparator": ": ",
+        "statusYear": "hidden",
+        "statusMonth": "short",
+        "statusDay": "numeric",
+        "statusHourCycle": "default",
+        "statusTimeFormat": "h:m"
+    },
+    {
+        "id": "cbfcae485e96c14a",
+        "type": "vsh-connection",
+        "name": "levismurici@gmail.com",
+        "port": "8883",
+        "accessTokenExpiry": "1662949280541",
+        "debug": false,
+        "backendUrl": "https://kfd5m4a21f.execute-api.eu-west-1.amazonaws.com/dev",
+        "lwaClientId": "amzn1.application-oa2-client.3f1bb07133854b078261ad43f2484c18"
+    },
+    {
+        "id": "2c1ab75056bc2d57",
+        "type": "ui_tab",
+        "name": "Alarmes",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "df4fcbfa63fdb40f",
+        "type": "ui_group",
+        "name": "Alarmes",
+        "tab": "2c1ab75056bc2d57",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2feb5af6159f1ec7",
+        "type": "tls-config",
+        "name": "aws_iot_suricato_tls_config",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "nodered-device-certificate.pem.crt",
+        "keyname": "nodered-private.pem.key",
+        "caname": "node-red-AmazonRootCA1.pem",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "0ccfc36fdfbcfcc1",
+        "type": "mqtt in",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "suricato30-motion-alarm/pub",
+        "topic": "suricato30/pub",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "dcf414604905f363",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 480,
+        "wires": [
+            [
+                "d5c1989d5ba2240b"
+            ]
+        ]
+    },
+    {
+        "id": "d5c1989d5ba2240b",
+        "type": "json",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 450,
+        "y": 480,
+        "wires": [
+            [
+                "09fa2b04f481c0d4",
+                "8049432fde6e9572",
+                "417bd4c4b4e9d964"
+            ]
+        ]
+    },
+    {
+        "id": "dd0349525173510f",
+        "type": "comment",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "suricato-30",
+        "info": "",
+        "x": 160,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1b62c2f9695683d3",
+        "type": "http request",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "suricato20-status-post",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://g4wjopsdvg.execute-api.us-west-1.amazonaws.com/dev/mcu/motion/dump",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 960,
+        "y": 480,
+        "wires": [
+            [
+                "3b5542a35ce43186"
+            ]
+        ]
+    },
+    {
+        "id": "2fe3ff17da86c066",
+        "type": "inject",
+        "z": "b5c7f3ef3757c5ae",
+        "d": true,
+        "name": "inject_true",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "60",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 420,
+        "wires": [
+            [
+                "77696f2a5062abcd",
+                "31c769b9485d4a53"
+            ]
+        ]
+    },
+    {
+        "id": "77696f2a5062abcd",
+        "type": "mqtt out",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "suricato30-motion-alarm/sub",
+        "topic": "suricato30/sub",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dcf414604905f363",
+        "x": 680,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "31c769b9485d4a53",
+        "type": "debug",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "98f36d7bdb0319c0",
+        "type": "comment",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "/motion/update",
+        "info": "",
+        "x": 1160,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "9059047c0847fe5d",
+        "type": "mqtt out",
+        "z": "b5c7f3ef3757c5ae",
+        "d": true,
+        "name": "suricato30-security-status/sub",
+        "topic": "suricato30-security-status/sub",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dcf414604905f363",
+        "x": 1390,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f0f349c1954e6c50",
+        "type": "link out",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "inject_security_control_out",
+        "mode": "link",
+        "links": [
+            "ae828075e54cdeb8"
+        ],
+        "x": 825,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ae828075e54cdeb8",
+        "type": "link in",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "inject_security_control_in",
+        "links": [
+            "f0f349c1954e6c50",
+            "235ba75694afafa1"
+        ],
+        "x": 1075,
+        "y": 100,
+        "wires": [
+            [
+                "9059047c0847fe5d"
+            ]
+        ]
+    },
+    {
+        "id": "13ca4cd5ec1aed6d",
+        "type": "comment",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "suricato-security-control",
+        "info": "",
+        "x": 200,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "46d2f925f3024b01",
+        "type": "server-state-changed",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "Security Mode",
+        "server": "1ab77321285bdc05",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "input_boolean.suricato_security_control",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 1,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "936630ae201c1a6b",
+                "ac3e6711d514952c"
+            ]
+        ]
+    },
+    {
+        "id": "936630ae201c1a6b",
+        "type": "switch",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "security_control_switch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 100,
+        "wires": [
+            [
+                "64edc36928f2d4dd"
+            ],
+            [
+                "cce171f768bc03a0"
+            ]
+        ]
+    },
+    {
+        "id": "64edc36928f2d4dd",
+        "type": "change",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 80,
+        "wires": [
+            [
+                "f0f349c1954e6c50"
+            ]
+        ]
+    },
+    {
+        "id": "cce171f768bc03a0",
+        "type": "change",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 120,
+        "wires": [
+            [
+                "f0f349c1954e6c50"
+            ]
+        ]
+    },
+    {
+        "id": "a8cbd0299beb0ae4",
+        "type": "link in",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "echo_web_socket_in",
+        "links": [
+            "52720d3ea1dd98b9",
+            "8b87c4269f75a3bd"
+        ],
+        "x": 55,
+        "y": 200,
+        "wires": [
+            [
+                "2e9245503251a249"
+            ]
+        ]
+    },
+    {
+        "id": "20e96a75b5274b4b",
+        "type": "switch",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "alexa_security_control_switch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 470,
+        "y": 200,
+        "wires": [
+            [
+                "bb40bfc51a19198a"
+            ],
+            [
+                "1f17e8fab95a2ae0"
+            ]
+        ]
+    },
+    {
+        "id": "bb40bfc51a19198a",
+        "type": "change",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 180,
+        "wires": [
+            [
+                "235ba75694afafa1",
+                "fec9f5bae9a15998"
+            ]
+        ]
+    },
+    {
+        "id": "1f17e8fab95a2ae0",
+        "type": "change",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 220,
+        "wires": [
+            [
+                "235ba75694afafa1",
+                "2ad3f3118c240f5c"
+            ]
+        ]
+    },
+    {
+        "id": "235ba75694afafa1",
+        "type": "link out",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "inject_security_control_out",
+        "mode": "link",
+        "links": [
+            "ae828075e54cdeb8"
+        ],
+        "x": 825,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "2e9245503251a249",
+        "type": "amazon-echo-device",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "Suricato Security",
+        "topic": "",
+        "x": 190,
+        "y": 200,
+        "wires": [
+            [
+                "20e96a75b5274b4b",
+                "913dd566b93754e4"
+            ]
+        ]
+    },
+    {
+        "id": "913dd566b93754e4",
+        "type": "api-call-service",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "security_mode_update",
+        "server": "1ab77321285bdc05",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "toggle",
+        "areaId": [
+            "varanda"
+        ],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.suricato_security_control"
+        ],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "last",
+        "x": 440,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac3e6711d514952c",
+        "type": "debug",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "Feedback1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "75dd6465ec3ec717",
+        "type": "link out",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "alexa_security_control_mode_ouput",
+        "mode": "link",
+        "links": [
+            "acaef43c9a0c398f"
+        ],
+        "x": 1005,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "fec9f5bae9a15998",
+        "type": "change",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "ligado",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ligado",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 180,
+        "wires": [
+            [
+                "75dd6465ec3ec717"
+            ]
+        ]
+    },
+    {
+        "id": "2ad3f3118c240f5c",
+        "type": "change",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "desligado",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "desligado",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 860,
+        "y": 220,
+        "wires": [
+            [
+                "75dd6465ec3ec717"
+            ]
+        ]
+    },
+    {
+        "id": "09fa2b04f481c0d4",
+        "type": "function",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "Set payload to Alexa",
+        "func": "msg.payload = \n{\n    'value': \n    {\n        'place': msg.payload.info.place,\n        'motion': msg.payload.data.status\n        \n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 580,
+        "wires": [
+            [
+                "9f287dde807d8f54"
+            ]
+        ]
+    },
+    {
+        "id": "9f287dde807d8f54",
+        "type": "switch",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "",
+        "property": "payload.value.motion",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "HIGH",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 890,
+        "y": 580,
+        "wires": [
+            [
+                "e517bec2788278eb",
+                "ab722c73aee50e0c"
+            ]
+        ]
+    },
+    {
+        "id": "ab722c73aee50e0c",
+        "type": "debug",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "Feedback1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "b3a89237c02683c5",
+        "type": "link out",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "alexa_motion_sala_output",
+        "mode": "link",
+        "links": [
+            "f55f102d264d3630"
+        ],
+        "x": 1315,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "e517bec2788278eb",
+        "type": "delay",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "10",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1120,
+        "y": 580,
+        "wires": [
+            [
+                "be0500e714d39167",
+                "b3a89237c02683c5"
+            ]
+        ]
+    },
+    {
+        "id": "be0500e714d39167",
+        "type": "debug",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "Feedback1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1370,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "ea4d7728f92dbb2e",
+        "type": "json",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 350,
+        "y": 780,
+        "wires": [
+            [
+                "98bd9baa361290ee",
+                "84a9ccdc5573f6a7"
+            ]
+        ]
+    },
+    {
+        "id": "84a9ccdc5573f6a7",
+        "type": "debug",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "Feedback1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "9f5cde891960d364",
+        "type": "comment",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "suricato-01",
+        "info": "",
+        "x": 140,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "98bd9baa361290ee",
+        "type": "http request",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "suricato01-status-post",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.101/alarm/update/suricato01",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 580,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66364dc0a3ea03b2",
+        "type": "mqtt in",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "device2/alarm",
+        "topic": "device2/alarm",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "dcf414604905f363",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 880,
+        "wires": [
+            [
+                "f21845461607e63f"
+            ]
+        ]
+    },
+    {
+        "id": "f21845461607e63f",
+        "type": "json",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 350,
+        "y": 880,
+        "wires": [
+            [
+                "5083766866a3d960",
+                "f99ccb28fca258d2"
+            ]
+        ]
+    },
+    {
+        "id": "f99ccb28fca258d2",
+        "type": "debug",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "Feedback1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "76b4eda9dc5ea407",
+        "type": "comment",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "suricato-02",
+        "info": "",
+        "x": 140,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "5083766866a3d960",
+        "type": "http request",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "suricato02-status-post",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.101/alarm/update/suricato02",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 580,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fbaaa2c4cc926a1e",
+        "type": "mqtt in",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "device3/button",
+        "topic": "device3/button",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "dcf414604905f363",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 980,
+        "wires": [
+            [
+                "b4946052138b31e2"
+            ]
+        ]
+    },
+    {
+        "id": "b4946052138b31e2",
+        "type": "json",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 350,
+        "y": 980,
+        "wires": [
+            [
+                "86998b2855bf87e6"
+            ]
+        ]
+    },
+    {
+        "id": "86998b2855bf87e6",
+        "type": "debug",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "Feedback1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "fef4f0c9241ae294",
+        "type": "comment",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "suricato-03",
+        "info": "",
+        "x": 140,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "eeb7da9e5ab26dc5",
+        "type": "mqtt in",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "device1/alarm",
+        "topic": "device1/alarm",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "dcf414604905f363",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 780,
+        "wires": [
+            [
+                "ea4d7728f92dbb2e"
+            ]
+        ]
+    },
+    {
+        "id": "ceb64ee6d666e306",
+        "type": "comment",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "/alarm/update/suricato01",
+        "info": "",
+        "x": 810,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "696b163d44c83b11",
+        "type": "comment",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "/alarm/update/suricato02",
+        "info": "",
+        "x": 810,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "0e227c3d583e2fa1",
+        "type": "comment",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "teste",
+        "info": "",
+        "x": 750,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "18df350d139c8476",
+        "type": "inject",
+        "z": "b5c7f3ef3757c5ae",
+        "d": true,
+        "name": "inject_true",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "60",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 1140,
+        "y": 140,
+        "wires": [
+            [
+                "9059047c0847fe5d"
+            ]
+        ]
+    },
+    {
+        "id": "b5c18180e205cfcb",
+        "type": "inject",
+        "z": "b5c7f3ef3757c5ae",
+        "d": true,
+        "name": "inject_false",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "60",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 1140,
+        "y": 180,
+        "wires": [
+            [
+                "9059047c0847fe5d"
+            ]
+        ]
+    },
+    {
+        "id": "4b84d255f83f3cb1",
+        "type": "comment",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "Tópico desligado",
+        "info": "",
+        "x": 1620,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e9aa23ded5684dba",
+        "type": "comment",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "Tópico de envio de Request",
+        "info": "",
+        "x": 940,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "d99f992c65cf09a5",
+        "type": "inject",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "inject_false",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "60",
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 160,
+        "y": 380,
+        "wires": [
+            [
+                "77696f2a5062abcd"
+            ]
+        ]
+    },
+    {
+        "id": "8049432fde6e9572",
+        "type": "debug",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "76a824ef95d4bfd3",
+        "type": "inject",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "inject_true",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "60",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 160,
+        "y": 340,
+        "wires": [
+            [
+                "77696f2a5062abcd"
+            ]
+        ]
+    },
+    {
+        "id": "c23c1a5f82b66bb0",
+        "type": "debug",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "Feedback1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "417bd4c4b4e9d964",
+        "type": "function",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "Set payload to API Gateway",
+        "func": "msg.payload = \n{\n  \"message\": \"Saque no movimento!\",\n  \"body\": {\n    \"name\": msg.payload.name,\n    \"info\": {\n      \"type\": msg.payload.info.type,\n      \"place\": msg.payload.info.place,\n      \"ipaddr\": msg.payload.info.ipaddr\n        },\n    \"data\": {\n        \"status\": msg.payload.data.status,\n        }\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 480,
+        "wires": [
+            [
+                "1b62c2f9695683d3",
+                "c23c1a5f82b66bb0"
+            ]
+        ]
+    },
+    {
+        "id": "06aca8ecc5415b51",
+        "type": "inject",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "simulation_post",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "60",
+        "topic": "",
+        "payload": "{\"name\":\"suricato31\",\"info\":{\"type\":\"motion\",\"place\":\"quarto\",\"ipaddr\":\"6.6.6.7\"},\"data\":{\"status\":\"HIGH\"}}",
+        "payloadType": "json",
+        "x": 420,
+        "y": 560,
+        "wires": [
+            [
+                "417bd4c4b4e9d964",
+                "09fa2b04f481c0d4"
+            ]
+        ]
+    },
+    {
+        "id": "3b5542a35ce43186",
+        "type": "debug",
+        "z": "b5c7f3ef3757c5ae",
+        "name": "Feedback1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "b93e6aa78b74f548",
+        "type": "mqtt in",
+        "z": "7b6e128ce996e30a",
+        "name": "suricato11-garden-temp/pub",
+        "topic": "suricato11-garden-temp/pub",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "dcf414604905f363",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 260,
+        "wires": [
+            [
+                "4a62fb5e2c3de67d"
+            ]
+        ]
+    },
+    {
+        "id": "3631ca0b158a0b89",
+        "type": "debug",
+        "z": "7b6e128ce996e30a",
+        "name": "Feedback1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "caca8a34c7d2abf6",
+        "type": "comment",
+        "z": "7b6e128ce996e30a",
+        "name": "suricato-11",
+        "info": "",
+        "x": 120,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "bfc35f4cf98ade29",
+        "type": "http request",
+        "z": "7b6e128ce996e30a",
+        "name": "suricato04-status-post",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.70:4000/garden/update",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 960,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e24ddda51c5f4472",
+        "type": "inject",
+        "z": "7b6e128ce996e30a",
+        "name": "inject_true",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "3600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "60",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "b1d220bf187470d7"
+            ]
+        ]
+    },
+    {
+        "id": "895fa536ec94f854",
+        "type": "mqtt out",
+        "z": "7b6e128ce996e30a",
+        "name": "suricato11-garden-temp/sub",
+        "topic": "suricato11-garden-temp/sub",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dcf414604905f363",
+        "x": 980,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "cb4fb11cf4ba05fc",
+        "type": "debug",
+        "z": "7b6e128ce996e30a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "69923d64bfbf1051",
+        "type": "comment",
+        "z": "7b6e128ce996e30a",
+        "name": "/garden/update",
+        "info": "",
+        "x": 1160,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "25a5516236531a67",
+        "type": "mqtt in",
+        "z": "7b6e128ce996e30a",
+        "name": "suricato12-garden-water/pub",
+        "topic": "suricato12-garden-water/pub",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "dcf414604905f363",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 720,
+        "wires": [
+            [
+                "fd36daccc4a44e08"
+            ]
+        ]
+    },
+    {
+        "id": "fd36daccc4a44e08",
+        "type": "json",
+        "z": "7b6e128ce996e30a",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 390,
+        "y": 720,
+        "wires": [
+            [
+                "ba0cebdcb24a481f",
+                "62e0aa4a7d16256c"
+            ]
+        ]
+    },
+    {
+        "id": "ba0cebdcb24a481f",
+        "type": "debug",
+        "z": "7b6e128ce996e30a",
+        "name": "Feedback1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "9abac72a4effb3c8",
+        "type": "comment",
+        "z": "7b6e128ce996e30a",
+        "name": "suricato-12-watering",
+        "info": "",
+        "x": 130,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "9837bc2a3470fdc2",
+        "type": "http request",
+        "z": "7b6e128ce996e30a",
+        "name": "suricato12-status-post",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.70:4000/alarm/update/suricato12",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 900,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "804899911f4118b9",
+        "type": "comment",
+        "z": "7b6e128ce996e30a",
+        "name": "/garden/update",
+        "info": "",
+        "x": 800,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "6c4cbf2df3cc6b2d",
+        "type": "link in",
+        "z": "7b6e128ce996e30a",
+        "name": "echo_web_socket_in",
+        "links": [
+            "52720d3ea1dd98b9",
+            "8b87c4269f75a3bd"
+        ],
+        "x": 75,
+        "y": 100,
+        "wires": [
+            [
+                "d3c62c8e572f8de9"
+            ]
+        ]
+    },
+    {
+        "id": "4f8909213a5d3cf8",
+        "type": "debug",
+        "z": "7b6e128ce996e30a",
+        "name": "Feedback1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "4d6fcdb71f479c76",
+        "type": "link out",
+        "z": "7b6e128ce996e30a",
+        "name": "temperatura_varanda_out",
+        "mode": "link",
+        "links": [
+            "1fc8ca7490e5aeca"
+        ],
+        "x": 685,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "dd9e4315e7d80bae",
+        "type": "change",
+        "z": "7b6e128ce996e30a",
+        "name": "temperatura_varanda_set_true",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 100,
+        "wires": [
+            [
+                "4d6fcdb71f479c76"
+            ]
+        ]
+    },
+    {
+        "id": "1fc8ca7490e5aeca",
+        "type": "link in",
+        "z": "7b6e128ce996e30a",
+        "name": "suricato11-garden/pub_json_out",
+        "links": [
+            "4d6fcdb71f479c76",
+            "b1d220bf187470d7"
+        ],
+        "x": 785,
+        "y": 100,
+        "wires": [
+            [
+                "895fa536ec94f854",
+                "cb4fb11cf4ba05fc"
+            ]
+        ]
+    },
+    {
+        "id": "b1d220bf187470d7",
+        "type": "link out",
+        "z": "7b6e128ce996e30a",
+        "name": "temperatura_varanda_out",
+        "mode": "link",
+        "links": [
+            "1fc8ca7490e5aeca"
+        ],
+        "x": 315,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "4a62fb5e2c3de67d",
+        "type": "json",
+        "z": "7b6e128ce996e30a",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "3631ca0b158a0b89",
+                "530dc2fe759c9bb8",
+                "bd8f6cb7d13efef0",
+                "2755750407986011"
+            ]
+        ]
+    },
+    {
+        "id": "d3c62c8e572f8de9",
+        "type": "amazon-echo-device",
+        "z": "7b6e128ce996e30a",
+        "name": "Suricato Temp",
+        "topic": "",
+        "x": 200,
+        "y": 100,
+        "wires": [
+            [
+                "dd9e4315e7d80bae",
+                "4f8909213a5d3cf8"
+            ]
+        ]
+    },
+    {
+        "id": "fad70508bb2b7da6",
+        "type": "inject",
+        "z": "7b6e128ce996e30a",
+        "name": "inject_true",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "60",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 490,
+        "y": 660,
+        "wires": [
+            [
+                "165e19935440eb5f"
+            ]
+        ]
+    },
+    {
+        "id": "442c46cfedf59080",
+        "type": "mqtt out",
+        "z": "7b6e128ce996e30a",
+        "name": "suricato12-garden-water/sub",
+        "topic": "suricato12-garden-water/sub",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dcf414604905f363",
+        "x": 1080,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "bb289024fb96dafa",
+        "type": "debug",
+        "z": "7b6e128ce996e30a",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c86c83faaca9687d",
+        "type": "link in",
+        "z": "7b6e128ce996e30a",
+        "name": "echo_web_socket_in",
+        "links": [
+            "52720d3ea1dd98b9",
+            "8b87c4269f75a3bd"
+        ],
+        "x": 55,
+        "y": 500,
+        "wires": [
+            [
+                "af6a27a13a7cc871"
+            ]
+        ]
+    },
+    {
+        "id": "8bb13b437a49eb84",
+        "type": "link out",
+        "z": "7b6e128ce996e30a",
+        "name": "irrigacao_varanda_out",
+        "mode": "link",
+        "links": [
+            "32e262a08617f786"
+        ],
+        "x": 785,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "32e262a08617f786",
+        "type": "link in",
+        "z": "7b6e128ce996e30a",
+        "name": "suricato21-water/pub_json_out",
+        "links": [
+            "165e19935440eb5f",
+            "8bb13b437a49eb84"
+        ],
+        "x": 885,
+        "y": 520,
+        "wires": [
+            [
+                "442c46cfedf59080",
+                "bb289024fb96dafa"
+            ]
+        ]
+    },
+    {
+        "id": "165e19935440eb5f",
+        "type": "link out",
+        "z": "7b6e128ce996e30a",
+        "name": "irrigacao_varanda_out",
+        "mode": "link",
+        "links": [
+            "32e262a08617f786"
+        ],
+        "x": 665,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "af6a27a13a7cc871",
+        "type": "amazon-echo-device",
+        "z": "7b6e128ce996e30a",
+        "name": "Suricato Water",
+        "topic": "",
+        "x": 180,
+        "y": 500,
+        "wires": [
+            [
+                "88228bc3de0346f7"
+            ]
+        ]
+    },
+    {
+        "id": "62e0aa4a7d16256c",
+        "type": "function",
+        "z": "7b6e128ce996e30a",
+        "name": "Set payload",
+        "func": "msg.payload = \n{\n    // 'entity_id': id,\n    'value': {\n        temperature: msg.payload.data.state\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 720,
+        "wires": [
+            [
+                "cacdb2f4b1e4e8c1"
+            ]
+        ]
+    },
+    {
+        "id": "cacdb2f4b1e4e8c1",
+        "type": "switch",
+        "z": "7b6e128ce996e30a",
+        "name": "irrigação_switch",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "RELAY_ON",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "RELAY_OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 800,
+        "y": 720,
+        "wires": [
+            [
+                "729a3d114212ab36"
+            ],
+            [
+                "e57d3a1b83a14e53"
+            ]
+        ]
+    },
+    {
+        "id": "e57d3a1b83a14e53",
+        "type": "change",
+        "z": "7b6e128ce996e30a",
+        "name": "off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "desligado",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 740,
+        "wires": [
+            [
+                "cd5f20cbbc51f0c3"
+            ]
+        ]
+    },
+    {
+        "id": "729a3d114212ab36",
+        "type": "change",
+        "z": "7b6e128ce996e30a",
+        "name": "on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ligado",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 700,
+        "wires": [
+            [
+                "cd5f20cbbc51f0c3"
+            ]
+        ]
+    },
+    {
+        "id": "530dc2fe759c9bb8",
+        "type": "function",
+        "z": "7b6e128ce996e30a",
+        "name": "Set temperature",
+        "func": "msg.payload = \n{\n    \"data\":\n    {\n        \"value\": msg.payload.data.temperature\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 300,
+        "wires": [
+            [
+                "2b995777194db617"
+            ]
+        ]
+    },
+    {
+        "id": "bd8f6cb7d13efef0",
+        "type": "function",
+        "z": "7b6e128ce996e30a",
+        "name": "Set humidity",
+        "func": "msg.payload = \n{\n    \"data\":\n    {\n        \"value\": msg.payload.data.humidity\n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 340,
+        "wires": [
+            [
+                "2b995777194db617"
+            ]
+        ]
+    },
+    {
+        "id": "2755750407986011",
+        "type": "function",
+        "z": "7b6e128ce996e30a",
+        "name": "Set payload to Alexa",
+        "func": "msg.payload = \n{\n    'value': \n    {\n        'humidity': msg.payload.data.humidity,\n        'temperature': msg.payload.data.temperature\n        \n    }\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 260,
+        "wires": [
+            [
+                "2b995777194db617"
+            ]
+        ]
+    },
+    {
+        "id": "1f776803ab66ecd3",
+        "type": "server-state-changed",
+        "z": "7b6e128ce996e30a",
+        "name": "Status button",
+        "server": "1ab77321285bdc05",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 1,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "b1d220bf187470d7"
+            ]
+        ]
+    },
+    {
+        "id": "9d4a081a787b1d25",
+        "type": "server-state-changed",
+        "z": "7b6e128ce996e30a",
+        "name": "Water button",
+        "server": "1ab77321285bdc05",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "input_boolean.suricato12_varanda_water_engine_button",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 1,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 110,
+        "y": 600,
+        "wires": [
+            [
+                "37c4548e7b993ddd",
+                "51578f861f282d27"
+            ]
+        ]
+    },
+    {
+        "id": "37c4548e7b993ddd",
+        "type": "switch",
+        "z": "7b6e128ce996e30a",
+        "name": "water_button_switch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 600,
+        "wires": [
+            [
+                "b802454c5588d810"
+            ],
+            [
+                "c2a985745c74c325"
+            ]
+        ]
+    },
+    {
+        "id": "c2a985745c74c325",
+        "type": "change",
+        "z": "7b6e128ce996e30a",
+        "name": "off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 620,
+        "wires": [
+            [
+                "165e19935440eb5f"
+            ]
+        ]
+    },
+    {
+        "id": "b802454c5588d810",
+        "type": "change",
+        "z": "7b6e128ce996e30a",
+        "name": "on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 580,
+        "wires": [
+            [
+                "165e19935440eb5f"
+            ]
+        ]
+    },
+    {
+        "id": "51578f861f282d27",
+        "type": "debug",
+        "z": "7b6e128ce996e30a",
+        "name": "Feedback1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "88228bc3de0346f7",
+        "type": "switch",
+        "z": "7b6e128ce996e30a",
+        "name": "irrigacao_varanda_set_true",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 420,
+        "y": 500,
+        "wires": [
+            [
+                "f9bfe7b10e1759f5"
+            ],
+            [
+                "0828833760f8d2ae"
+            ]
+        ]
+    },
+    {
+        "id": "f9bfe7b10e1759f5",
+        "type": "change",
+        "z": "7b6e128ce996e30a",
+        "name": "on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 480,
+        "wires": [
+            [
+                "8bb13b437a49eb84",
+                "fedfec8b02251f76"
+            ]
+        ]
+    },
+    {
+        "id": "0828833760f8d2ae",
+        "type": "change",
+        "z": "7b6e128ce996e30a",
+        "name": "off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 520,
+        "wires": [
+            [
+                "8bb13b437a49eb84",
+                "fedfec8b02251f76"
+            ]
+        ]
+    },
+    {
+        "id": "2b995777194db617",
+        "type": "link out",
+        "z": "7b6e128ce996e30a",
+        "name": "alexa_temperatura_varanda_ouput",
+        "mode": "link",
+        "links": [
+            "ea4e9cf4d41a6a79",
+            "d39425967ff06b14",
+            "23d18cd26e7eb183"
+        ],
+        "x": 795,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "cd5f20cbbc51f0c3",
+        "type": "link out",
+        "z": "7b6e128ce996e30a",
+        "name": "alexa_watering_output",
+        "mode": "link",
+        "links": [
+            "fb3cfe0f5e505dd6"
+        ],
+        "x": 1145,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "3a070109f854e616",
+        "type": "comment",
+        "z": "7b6e128ce996e30a",
+        "name": "alarm/update/suricato12",
+        "info": "",
+        "x": 1120,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "fedfec8b02251f76",
+        "type": "api-call-service",
+        "z": "7b6e128ce996e30a",
+        "name": "suricato_water_button_update",
+        "server": "1ab77321285bdc05",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "toggle",
+        "areaId": [
+            "varanda"
+        ],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.suricato12_varanda_water_engine_button"
+        ],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 890,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "efd9bdf898495e49",
+        "type": "mqtt in",
+        "z": "a1425bb4b8c39b05",
+        "name": "suricato21-light/pub",
+        "topic": "suricato21-light/pub",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "dcf414604905f363",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 480,
+        "wires": [
+            [
+                "d05ceeaaab591d6e"
+            ]
+        ]
+    },
+    {
+        "id": "d05ceeaaab591d6e",
+        "type": "json",
+        "z": "a1425bb4b8c39b05",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 310,
+        "y": 480,
+        "wires": [
+            [
+                "0c6df1476b590d88"
+            ]
+        ]
+    },
+    {
+        "id": "5ec8fbb7269757a2",
+        "type": "debug",
+        "z": "a1425bb4b8c39b05",
+        "name": "Feedback1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "2471daad02cd5947",
+        "type": "comment",
+        "z": "a1425bb4b8c39b05",
+        "name": "suricato-21",
+        "info": "",
+        "x": 100,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "238620f4053b2d38",
+        "type": "http request",
+        "z": "a1425bb4b8c39b05",
+        "name": "suricato04-status-post/garden/update",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.70:4000/garden/update",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 790,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "21bbcff816dff60e",
+        "type": "mqtt out",
+        "z": "a1425bb4b8c39b05",
+        "name": "suricato21-light/sub",
+        "topic": "suricato21-light/sub",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dcf414604905f363",
+        "x": 950,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6e72a7f832fa12ff",
+        "type": "change",
+        "z": "a1425bb4b8c39b05",
+        "name": "suricato-21/living-room_status",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.data.staus",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 560,
+        "wires": [
+            [
+                "136f189812365b8d"
+            ]
+        ]
+    },
+    {
+        "id": "d8d462d969a5e195",
+        "type": "change",
+        "z": "a1425bb4b8c39b05",
+        "name": "suricato-21/living-room_place",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.info.place",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 520,
+        "wires": [
+            [
+                "88d6363df325b7ed"
+            ]
+        ]
+    },
+    {
+        "id": "88d6363df325b7ed",
+        "type": "ui_text",
+        "z": "a1425bb4b8c39b05",
+        "group": "9c34d3c15c313c85",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Place",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1010,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "136f189812365b8d",
+        "type": "ui_text",
+        "z": "a1425bb4b8c39b05",
+        "group": "9c34d3c15c313c85",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1010,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "fe0c8b132815f29d",
+        "type": "change",
+        "z": "a1425bb4b8c39b05",
+        "name": "off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 100,
+        "wires": [
+            [
+                "ab9e86c8932d89d3",
+                "878f46f55a62af13"
+            ]
+        ]
+    },
+    {
+        "id": "f95d1d755cbf3f30",
+        "type": "change",
+        "z": "a1425bb4b8c39b05",
+        "name": "on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 60,
+        "wires": [
+            [
+                "af3d36c316f22196",
+                "878f46f55a62af13"
+            ]
+        ]
+    },
+    {
+        "id": "eb1cbdb0bd577bd5",
+        "type": "change",
+        "z": "a1425bb4b8c39b05",
+        "name": "Estrelas On",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Estrelas brilhando.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [
+                "a42d6c5c130f43f9"
+            ]
+        ]
+    },
+    {
+        "id": "240fc0b02112fff0",
+        "type": "change",
+        "z": "a1425bb4b8c39b05",
+        "name": "Estrelas Off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Estrelas apagadas.",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 320,
+        "wires": [
+            [
+                "e0b1f96c0fc79944"
+            ]
+        ]
+    },
+    {
+        "id": "64ca01ee094c5507",
+        "type": "ui_button",
+        "z": "a1425bb4b8c39b05",
+        "name": "",
+        "group": "9c34d3c15c313c85",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "On",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 280,
+        "wires": [
+            [
+                "3b3203bc29c083f4"
+            ]
+        ]
+    },
+    {
+        "id": "d0dd758d05b5e7ab",
+        "type": "ui_button",
+        "z": "a1425bb4b8c39b05",
+        "name": "",
+        "group": "9c34d3c15c313c85",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Off",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 360,
+        "wires": [
+            [
+                "c515ae4aea945240"
+            ]
+        ]
+    },
+    {
+        "id": "6422719e419347f2",
+        "type": "inject",
+        "z": "a1425bb4b8c39b05",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "str",
+        "x": 90,
+        "y": 400,
+        "wires": [
+            [
+                "c515ae4aea945240"
+            ]
+        ]
+    },
+    {
+        "id": "65041cd60faed973",
+        "type": "inject",
+        "z": "a1425bb4b8c39b05",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "str",
+        "x": 90,
+        "y": 320,
+        "wires": [
+            [
+                "3b3203bc29c083f4"
+            ]
+        ]
+    },
+    {
+        "id": "c515ae4aea945240",
+        "type": "link out",
+        "z": "a1425bb4b8c39b05",
+        "name": "led_off_local",
+        "mode": "link",
+        "links": [
+            "8f1fcd3f2dda63dc",
+            "78ec08e18dba9e0e"
+        ],
+        "x": 275,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "3b3203bc29c083f4",
+        "type": "link out",
+        "z": "a1425bb4b8c39b05",
+        "name": "led_on_local",
+        "mode": "link",
+        "links": [
+            "53e493532ac6df48",
+            "78ec08e18dba9e0e"
+        ],
+        "x": 275,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "53e493532ac6df48",
+        "type": "link in",
+        "z": "a1425bb4b8c39b05",
+        "name": "led_on_local_in",
+        "links": [
+            "3b3203bc29c083f4",
+            "af3d36c316f22196"
+        ],
+        "x": 355,
+        "y": 280,
+        "wires": [
+            [
+                "eb1cbdb0bd577bd5"
+            ]
+        ]
+    },
+    {
+        "id": "8f1fcd3f2dda63dc",
+        "type": "link in",
+        "z": "a1425bb4b8c39b05",
+        "name": "led_off_local_in",
+        "links": [
+            "c515ae4aea945240",
+            "ab9e86c8932d89d3"
+        ],
+        "x": 355,
+        "y": 320,
+        "wires": [
+            [
+                "240fc0b02112fff0"
+            ]
+        ]
+    },
+    {
+        "id": "78ec08e18dba9e0e",
+        "type": "link in",
+        "z": "a1425bb4b8c39b05",
+        "name": "suricato_led_control_in",
+        "links": [
+            "3b3203bc29c083f4",
+            "c515ae4aea945240",
+            "af3d36c316f22196",
+            "ab9e86c8932d89d3",
+            "dcd02ed232d9a5e3",
+            "c8e3968112fe66bd",
+            "f7e61ed8eda45d2a",
+            "5833798523613702"
+        ],
+        "x": 805,
+        "y": 80,
+        "wires": [
+            [
+                "21bbcff816dff60e",
+                "a73bd7edbe7c857b"
+            ]
+        ]
+    },
+    {
+        "id": "af3d36c316f22196",
+        "type": "link out",
+        "z": "a1425bb4b8c39b05",
+        "name": "led_switch_alexa_on",
+        "mode": "link",
+        "links": [
+            "53e493532ac6df48",
+            "78ec08e18dba9e0e",
+            "dd4cc9a6dc293974",
+            "26821e1779562975"
+        ],
+        "x": 665,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "ab9e86c8932d89d3",
+        "type": "link out",
+        "z": "a1425bb4b8c39b05",
+        "name": "led_switch_alexa_off",
+        "mode": "link",
+        "links": [
+            "78ec08e18dba9e0e",
+            "8f1fcd3f2dda63dc",
+            "26821e1779562975"
+        ],
+        "x": 665,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "0c6df1476b590d88",
+        "type": "link out",
+        "z": "a1425bb4b8c39b05",
+        "name": "suricato21-light/pub_json_out",
+        "mode": "link",
+        "links": [
+            "bf7ea85af18e14c4"
+        ],
+        "x": 405,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "bf7ea85af18e14c4",
+        "type": "link in",
+        "z": "a1425bb4b8c39b05",
+        "name": "suricato21-light/pub_json_in",
+        "links": [
+            "0c6df1476b590d88"
+        ],
+        "x": 545,
+        "y": 480,
+        "wires": [
+            [
+                "5ec8fbb7269757a2",
+                "d8d462d969a5e195",
+                "6e72a7f832fa12ff",
+                "238620f4053b2d38"
+            ]
+        ]
+    },
+    {
+        "id": "a73bd7edbe7c857b",
+        "type": "debug",
+        "z": "a1425bb4b8c39b05",
+        "name": "Feedback2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d9f3aa2a2257a4be",
+        "type": "switch",
+        "z": "a1425bb4b8c39b05",
+        "name": "led_estrelas_switch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 370,
+        "y": 80,
+        "wires": [
+            [
+                "f95d1d755cbf3f30"
+            ],
+            [
+                "fe0c8b132815f29d"
+            ]
+        ]
+    },
+    {
+        "id": "0f9318a28b13119b",
+        "type": "link in",
+        "z": "a1425bb4b8c39b05",
+        "name": "echo_web_socket_in",
+        "links": [
+            "52720d3ea1dd98b9",
+            "8b87c4269f75a3bd"
+        ],
+        "x": 55,
+        "y": 80,
+        "wires": [
+            [
+                "172c3510f4890a96"
+            ]
+        ]
+    },
+    {
+        "id": "6a18d0ce1ede7fb9",
+        "type": "debug",
+        "z": "a1425bb4b8c39b05",
+        "name": "Feedback1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "172c3510f4890a96",
+        "type": "amazon-echo-device",
+        "z": "a1425bb4b8c39b05",
+        "name": "Led Azul",
+        "topic": "",
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "d9f3aa2a2257a4be"
+            ]
+        ]
+    },
+    {
+        "id": "2fd4b8ffd2913223",
+        "type": "server-state-changed",
+        "z": "a1425bb4b8c39b05",
+        "name": "Blue led button",
+        "server": "1ab77321285bdc05",
+        "version": 4,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "input_boolean.suricato_led_azul",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "outputs": 1,
+        "output_only_on_state_change": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 120,
+        "y": 180,
+        "wires": [
+            [
+                "1bca10e17be3ef7f"
+            ]
+        ]
+    },
+    {
+        "id": "1bca10e17be3ef7f",
+        "type": "switch",
+        "z": "a1425bb4b8c39b05",
+        "name": "blue_led_button_switch",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 180,
+        "wires": [
+            [
+                "18f1b9a5099fc938"
+            ],
+            [
+                "069d2d511cbc09b0"
+            ]
+        ]
+    },
+    {
+        "id": "18f1b9a5099fc938",
+        "type": "change",
+        "z": "a1425bb4b8c39b05",
+        "name": "on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "true",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 160,
+        "wires": [
+            [
+                "dcd02ed232d9a5e3"
+            ]
+        ]
+    },
+    {
+        "id": "069d2d511cbc09b0",
+        "type": "change",
+        "z": "a1425bb4b8c39b05",
+        "name": "off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 200,
+        "wires": [
+            [
+                "c8e3968112fe66bd"
+            ]
+        ]
+    },
+    {
+        "id": "dcd02ed232d9a5e3",
+        "type": "link out",
+        "z": "a1425bb4b8c39b05",
+        "name": "led_switch_alexa_on",
+        "mode": "link",
+        "links": [
+            "78ec08e18dba9e0e"
+        ],
+        "x": 665,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c8e3968112fe66bd",
+        "type": "link out",
+        "z": "a1425bb4b8c39b05",
+        "name": "led_switch_alexa_off",
+        "mode": "link",
+        "links": [
+            "78ec08e18dba9e0e"
+        ],
+        "x": 665,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a42d6c5c130f43f9",
+        "type": "link out",
+        "z": "a1425bb4b8c39b05",
+        "name": "alexa_estrelas_on_output",
+        "mode": "link",
+        "links": [
+            "4c7d6ddfb3131256",
+            "87f4a535779549b5"
+        ],
+        "x": 645,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e0b1f96c0fc79944",
+        "type": "link out",
+        "z": "a1425bb4b8c39b05",
+        "name": "alexa_estrelas_off_input",
+        "mode": "link",
+        "links": [
+            "38a868698da80e7c",
+            "a18420ce98962061"
+        ],
+        "x": 645,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "878f46f55a62af13",
+        "type": "api-call-service",
+        "z": "a1425bb4b8c39b05",
+        "name": "led_azul_update",
+        "server": "1ab77321285bdc05",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_boolean",
+        "service": "toggle",
+        "areaId": [
+            "varanda"
+        ],
+        "deviceId": [],
+        "entityId": [
+            "input_boolean.suricato_led_azul"
+        ],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 880,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98a57ac716c17153",
+        "type": "debug",
+        "z": "1756d20f51a975d9",
+        "name": "Feedback1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "22e1c6e835086c84",
+        "type": "json",
+        "z": "1756d20f51a975d9",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "98a57ac716c17153"
+            ]
+        ]
+    },
+    {
+        "id": "31b6a97e68b85f85",
+        "type": "inject",
+        "z": "1756d20f51a975d9",
+        "name": "request",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 180,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8bee909ee4f47966",
+        "type": "http request",
+        "z": "1756d20f51a975d9",
+        "name": "suricato-alarms-get",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.70:4000/alarm/getAllData/type/Alarm",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 190,
+        "y": 140,
+        "wires": [
+            [
+                "22e1c6e835086c84"
+            ]
+        ]
+    },
+    {
+        "id": "bb4aa638a0b6aa01",
+        "type": "comment",
+        "z": "1756d20f51a975d9",
+        "name": "/alarm/getAllData/type/Alarm",
+        "info": "",
+        "x": 420,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "101123210d86249d",
+        "type": "debug",
+        "z": "1756d20f51a975d9",
+        "name": "Feedback1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "43e649c5424663c1",
+        "type": "json",
+        "z": "1756d20f51a975d9",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 390,
+        "y": 320,
+        "wires": [
+            [
+                "101123210d86249d"
+            ]
+        ]
+    },
+    {
+        "id": "62723e51f84dd328",
+        "type": "inject",
+        "z": "1756d20f51a975d9",
+        "name": "request",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 180,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1937aa83b3e20636",
+        "type": "http request",
+        "z": "1756d20f51a975d9",
+        "name": "suricato-alarms-get",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.70:4000/alarm/getAllData/type/Garden",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 190,
+        "y": 320,
+        "wires": [
+            [
+                "43e649c5424663c1"
+            ]
+        ]
+    },
+    {
+        "id": "9c727d06b9fcb8c7",
+        "type": "comment",
+        "z": "1756d20f51a975d9",
+        "name": "/alarm/getAllData/type/Garden",
+        "info": "",
+        "x": 420,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a1ac60a6f4e18c41",
+        "type": "debug",
+        "z": "1756d20f51a975d9",
+        "name": "Feedback1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "af4db5225164abda",
+        "type": "json",
+        "z": "1756d20f51a975d9",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 390,
+        "y": 500,
+        "wires": [
+            [
+                "a1ac60a6f4e18c41"
+            ]
+        ]
+    },
+    {
+        "id": "695090da347c6457",
+        "type": "inject",
+        "z": "1756d20f51a975d9",
+        "d": true,
+        "name": "request",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 180,
+        "y": 440,
+        "wires": [
+            [
+                "df08415deb31e368"
+            ]
+        ]
+    },
+    {
+        "id": "df08415deb31e368",
+        "type": "http request",
+        "z": "1756d20f51a975d9",
+        "d": true,
+        "name": "suricato-motion-get",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.0.70:4000/motion/show/suricato20",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 190,
+        "y": 500,
+        "wires": [
+            [
+                "af4db5225164abda"
+            ]
+        ]
+    },
+    {
+        "id": "2fe3eb480174209c",
+        "type": "comment",
+        "z": "1756d20f51a975d9",
+        "name": "motion/show/suricato20",
+        "info": "",
+        "x": 400,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "5df885b3110b23d1",
+        "type": "amazon-echo-hub",
+        "z": "83982b732e8f09b1",
+        "port": "80",
+        "processinput": 0,
+        "discovery": true,
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "8b87c4269f75a3bd"
+            ]
+        ]
+    },
+    {
+        "id": "8b87c4269f75a3bd",
+        "type": "link out",
+        "z": "83982b732e8f09b1",
+        "name": "echo_web_socket_out",
+        "mode": "link",
+        "links": [
+            "0f9318a28b13119b",
+            "6c4cbf2df3cc6b2d",
+            "c86c83faaca9687d",
+            "a8cbd0299beb0ae4"
+        ],
+        "x": 335,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "b4f8c1fd942c3014",
+        "type": "api-call-service",
+        "z": "1188991a12524be6",
+        "name": "Alexa temperatura",
+        "server": "1ab77321285bdc05",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "notify",
+        "service": "alexa_media_echo_dot_de_levi",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"data\":{\"type\":\"tts\"},\"message\":\"A temperatura na varanda é de {{payload.value.temperature}} graus, e a umidade é de {{payload.value.humidity}} porcento\",\"target\":\"{{payload_alexa}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 550,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc94a5d73b28beb2",
+        "type": "api-call-service",
+        "z": "1188991a12524be6",
+        "name": "Temperatura Varanda",
+        "server": "1ab77321285bdc05",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_number.suricato11_varanda_temp"
+        ],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 560,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98aff7854d5145d4",
+        "type": "api-call-service",
+        "z": "1188991a12524be6",
+        "name": "Umidade Varanda",
+        "server": "1ab77321285bdc05",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "input_number",
+        "service": "set_value",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [
+            "input_number.suricato11_varanda_hum"
+        ],
+        "data": "",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 550,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "23d18cd26e7eb183",
+        "type": "link in",
+        "z": "1188991a12524be6",
+        "name": "alexa_temperatura_varanda_input",
+        "links": [
+            "2b995777194db617",
+            "8221b985d8d1927b"
+        ],
+        "x": 355,
+        "y": 80,
+        "wires": [
+            [
+                "b4f8c1fd942c3014",
+                "dc94a5d73b28beb2",
+                "98aff7854d5145d4"
+            ]
+        ]
+    },
+    {
+        "id": "c960b0f7be155a02",
+        "type": "comment",
+        "z": "1188991a12524be6",
+        "name": "suricato11-temp-varanda",
+        "info": "",
+        "x": 170,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "51f06799fb77afd4",
+        "type": "api-call-service",
+        "z": "1188991a12524be6",
+        "name": "Alexa water",
+        "server": "1ab77321285bdc05",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "notify",
+        "service": "alexa_media_echo_dot_de_levi",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"data\":{\"type\":\"tts\"},\"message\":\"A irricação está {{payload}}\",\"target\":\"{{payload_alexa}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 530,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb3cfe0f5e505dd6",
+        "type": "link in",
+        "z": "1188991a12524be6",
+        "name": "alexa_watering_input",
+        "links": [
+            "cd5f20cbbc51f0c3"
+        ],
+        "x": 355,
+        "y": 200,
+        "wires": [
+            [
+                "51f06799fb77afd4"
+            ]
+        ]
+    },
+    {
+        "id": "4fbefe10abfa9c82",
+        "type": "comment",
+        "z": "1188991a12524be6",
+        "name": "suricato12-watering-varanda",
+        "info": "",
+        "x": 180,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "3911a82445bee048",
+        "type": "api-call-service",
+        "z": "1188991a12524be6",
+        "name": "Alexa estrelas",
+        "server": "1ab77321285bdc05",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "notify",
+        "service": "alexa_media_echo_dot_de_levi",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"data\":{\"type\":\"tts\"},\"message\":\"{{payload}}\",\"target\":\"{{payload_alexa}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 540,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d7f883ac9d77f416",
+        "type": "api-call-service",
+        "z": "1188991a12524be6",
+        "name": "Alexa estrelas",
+        "server": "1ab77321285bdc05",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "notify",
+        "service": "alexa_media_echo_dot_de_levi",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"data\":{\"type\":\"tts\"},\"message\":\"{{payload}}\",\"target\":\"{{payload_alexa}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 540,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "87f4a535779549b5",
+        "type": "link in",
+        "z": "1188991a12524be6",
+        "name": "",
+        "links": [
+            "a42d6c5c130f43f9"
+        ],
+        "x": 355,
+        "y": 300,
+        "wires": [
+            [
+                "3911a82445bee048"
+            ]
+        ]
+    },
+    {
+        "id": "a18420ce98962061",
+        "type": "link in",
+        "z": "1188991a12524be6",
+        "name": "",
+        "links": [
+            "e0b1f96c0fc79944"
+        ],
+        "x": 355,
+        "y": 340,
+        "wires": [
+            [
+                "d7f883ac9d77f416"
+            ]
+        ]
+    },
+    {
+        "id": "006606deb49943d9",
+        "type": "comment",
+        "z": "1188991a12524be6",
+        "name": "suricato-21-blue-led",
+        "info": "",
+        "x": 150,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "5a8bd8fcd7162c99",
+        "type": "comment",
+        "z": "1188991a12524be6",
+        "name": "suricato-security-control",
+        "info": "",
+        "x": 160,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "46251cb071f675c2",
+        "type": "api-call-service",
+        "z": "1188991a12524be6",
+        "name": "Alexa modo de segurança",
+        "server": "1ab77321285bdc05",
+        "version": 5,
+        "debugenabled": false,
+        "domain": "notify",
+        "service": "alexa_media_echo_dot_de_levi",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"data\":{\"type\":\"tts\"},\"message\":\"Modo de segurança {{payload}}.\",\"target\":\"{{payload_alexa}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 570,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "acaef43c9a0c398f",
+        "type": "link in",
+        "z": "1188991a12524be6",
+        "name": "alexa_security_control_mode_output",
+        "links": [
+            "8e56ac9c3835a08d",
+            "75dd6465ec3ec717"
+        ],
+        "x": 345,
+        "y": 480,
+        "wires": [
+            [
+                "46251cb071f675c2"
+            ]
+        ]
+    },
+    {
+        "id": "792c62c6c003f5bb",
+        "type": "api-call-service",
+        "z": "1188991a12524be6",
+        "name": "Alexa alarm place",
+        "server": "1ab77321285bdc05",
+        "version": 5,
+        "debugenabled": true,
+        "domain": "notify",
+        "service": "alexa_media_echo_dot_de_levi",
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "data": "{\"data\":{\"type\":\"tts\"},\"message\":\"Atenção, movimento detectado na {{payload.value.place}}!.\",\"target\":\"{{payload_alexa}}\"}",
+        "dataType": "json",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "x": 530,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f55f102d264d3630",
+        "type": "link in",
+        "z": "1188991a12524be6",
+        "name": "alexa_motion_sala_input",
+        "links": [
+            "b3a89237c02683c5"
+        ],
+        "x": 355,
+        "y": 600,
+        "wires": [
+            [
+                "792c62c6c003f5bb"
+            ]
+        ]
+    },
+    {
+        "id": "b7218d0450c9cc3e",
+        "type": "comment",
+        "z": "1188991a12524be6",
+        "name": "suricato30-motion-alarm",
+        "info": "",
+        "x": 170,
+        "y": 600,
+        "wires": []
+    }
+]
